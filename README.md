@@ -1,7 +1,8 @@
 # PowerShell---PingMonitor
-Ping Monitor with emal notifications (PowerShell)
+Ping Monitor with email notifications (PowerShell)
 
 This script will continuously ping multiple IP Addresses from a specified server/computer.  The script does NOT have to be ran on the machine from which you wish to monitor communications. Using the "-source" perameter in the "Test-Connection" command, PowerShell makes it possible to ping hosts from other machines and return the results locally.This comes in handy if you have a agroup of servers that are behind a firewall rule that only allows connectivity to a certain server.  Instead of executing the PoserShell on the specific server, we can ping by proxy!
+_Note: View the .PDF for the flowchart of this script's logic._
 
 **Prerequisites:**
 1. You will need access to an SMTP relay server (or use Gmail's relay server). Have ready the: SMTP Address, SSL port number & Credentials
