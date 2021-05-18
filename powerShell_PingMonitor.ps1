@@ -11,7 +11,7 @@ $MonitorAddresses = @(
 )
 $PingSourceComputer = "VM-SERVER-000.MyDomain.local" # ----- Set the computer from which the pings will be transmitted. This can be different than the computer that is running the script.
 $FailMinutes = "5" # ------ Set the number of minutes a continuous failure occurs before executing the SendMail function (Example "5")
-$Global:NotificationMinutes = "120" # ------ Set the sleep time for additional notifications. (Example "60")
+$Global:NotificationMinutes = "120" # ------ Set the sleep time (Minutes) before additional additional notifications are sent. (Example "60") This is per server, not collectively!
 # -----  START SEND MAIL VARIABLES -----
 $Global:EmailFromAddress = "MyEmailAddress@gmail.com" # This is the FROM address that will appear in the email. If you are using Gmail SMTP, this will need to be the account's email address.
 $Global:EmailSMTPServer = "smtp.gmail.com"  # This is the SMTP server for the email function (Example: smtp.gmail.com).
